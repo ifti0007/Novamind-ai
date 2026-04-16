@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaMind AI — AI Automation for Local Service Businesses</title>
+  <meta name="description" content="We build custom AI systems that follow up with every lead, fill your calendar, recover no-shows, and collect reviews — without your staff lifting a finger." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/home2.css" />
+</head>
+<body>
+
+  <!-- ░░ CURSOR GLOW ░░ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ░░ PAGE TRANSITION OVERLAY ░░ -->
+  <div class="page-overlay" id="pageOverlay"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">◈</span>
+        <span class="logo-word">Nova<em>Mind</em></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"    class="nav-link active">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="about.html"    class="nav-link">About</a></li>
+        <li><a href="contact.html"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="contact.html" class="nav-cta">Book a Call</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1 — HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+
+    <!-- Particle canvas -->
+    <canvas id="heroCanvas"></canvas>
+
+    <!-- Floating orbs -->
+    <div class="orb orb-blue"   aria-hidden="true"></div>
+    <div class="orb orb-purple" aria-hidden="true"></div>
+
+    <div class="hero-center">
+
+      <!-- Label -->
+      <div class="hero-label" id="heroLabel">
+        <span class="label-dot"></span>
+        AI AUTOMATION FOR LOCAL BUSINESSES
+      </div>
+
+      <!-- Headline -->
+      <h1 class="hero-headline" id="heroHeadline" aria-label="Your Business. Fully Automated. Always On.">
+        <span class="hw" style="--i:0">Your</span><span class="hw" style="--i:1">Business.</span>
+        <br/>
+        <span class="hw" style="--i:2">Fully</span><span class="hw" style="--i:3">Automated.</span>
+        <br/>
+        <span class="hw grad-word" style="--i:4">Always</span><span class="hw grad-word" style="--i:5">On.</span>
+      </h1>
+
+      <!-- Sub -->
+      <p class="hero-sub" id="heroSub">
+        Custom AI systems that follow up with every lead, fill your calendar, cut no-shows, and collect reviews — automatically.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero-ctas" id="heroCtas">
+        <a href="contact.html" class="btn btn-primary" id="ctaPrimary">
+          <span>Book a Free Strategy Call</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="services.html" class="btn btn-ghost" id="ctaGhost">
+          <span>See How It Works</span>
+        </a>
+      </div>
+
+      <!-- Trust line -->
+      <p class="hero-trust" id="heroTrust">
+        Trusted by Med Spas, Dental Offices, HVAC &amp; More Across the US
+      </p>
+
+    </div>
+
+    <!-- Scroll arrow -->
+    <div class="scroll-arrow" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2 — TICKER
+  ═══════════════════════════════════════════ -->
+  <div class="ticker-band" aria-label="Industries we serve">
+    <div class="ticker-fade ticker-fade-l"></div>
+    <div class="ticker-fade ticker-fade-r"></div>
+    <div class="ticker-track" id="tickerTrack">
+      <!-- items duplicated in JS for seamless loop -->
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 — PROBLEM & SOLUTION
+  ═══════════════════════════════════════════ -->
+  <section class="section ps-section" id="problemSolution">
+    <div class="container">
+      <div class="ps-grid">
+
+        <!-- LEFT — Problem -->
+        <div class="ps-col ps-problem slide-left">
+          <h2 class="ps-heading problem-heading">Your Business Is Losing Money <span class="red-text">Right Now.</span></h2>
+          <ul class="ps-list">
+            <li><span class="ps-dot ps-dot-red"></span>Leads come in — but slow follow-up lets them go cold and book elsewhere</li>
+            <li><span class="ps-dot ps-dot-red"></span>Appointments get booked — no-shows cost you hundreds every week</li>
+            <li><span class="ps-dot ps-dot-red"></span>Your staff wastes hours on calls, reminders, and chasing reviews manually</li>
+            <li><span class="ps-dot ps-dot-red"></span>Old customers forget you — and spend money with your competitors</li>
+          </ul>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="ps-divider" aria-hidden="true">
+          <div class="divider-line"></div>
+        </div>
+
+        <!-- RIGHT — Solution -->
+        <div class="ps-col ps-solution slide-right">
+          <h2 class="ps-heading solution-heading">We Fix All Of That. <span class="gradient-text">Automatically.</span></h2>
+          <ul class="ps-list">
+            <li><span class="ps-dot ps-dot-blue"></span>Every lead gets an AI follow-up within 60 seconds — day or night, no staff needed</li>
+            <li><span class="ps-dot ps-dot-blue"></span>Smart reminders cut no-shows by up to 60%, saving thousands per month</li>
+            <li><span class="ps-dot ps-dot-blue"></span>Your team stops doing admin. AI handles follow-ups, booking, and reviews 24/7</li>
+            <li><span class="ps-dot ps-dot-blue"></span>Reactivation campaigns turn your existing customer list into a recurring revenue stream</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 — HOW IT WORKS
+  ═══════════════════════════════════════════ -->
+  <section class="section hiw-section" id="howItWorks">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <span class="sec-tag">The Process</span>
+        <h2 class="sec-title">How It <span class="gradient-text">Works</span></h2>
+        <p class="sec-sub" style="max-width:560px;margin:0 auto;">We do all the heavy lifting. You go live in 7–14 days and start seeing results immediately.</p>
+      </div>
+
+      <!-- Steps + connector -->
+      <div class="hiw-wrapper">
+        <!-- animated connector line -->
+        <div class="hiw-connector" aria-hidden="true">
+          <div class="connector-line"></div>
+          <div class="connector-dot dot-1"></div>
+          <div class="connector-dot dot-2"></div>
+          <div class="connector-dot dot-3"></div>
+        </div>
+
+        <div class="hiw-cards">
+          <div class="hiw-card glass reveal-up" style="--d:0s">
+            <div class="hiw-num">01</div>
+            <h3>Audit</h3>
+            <p>We map exactly where you're losing leads, money, and customers. Most businesses are surprised how much slips through the cracks.</p>
+          </div>
+          <div class="hiw-card glass reveal-up" style="--d:.15s">
+            <div class="hiw-num">02</div>
+            <h3>Build</h3>
+            <p>We build your custom AI system in 7–14 days — trained on your business, connected to your calendar and CRM. No templates.</p>
+          </div>
+          <div class="hiw-card glass reveal-up" style="--d:.3s">
+            <div class="hiw-num">03</div>
+            <h3>Scale</h3>
+            <p>Your AI runs 24/7 — following up leads, filling your calendar, collecting reviews, and reactivating customers. You just serve them.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 5 — STATS
+  ═══════════════════════════════════════════ -->
+  <section class="section stats-section" id="stats">
+    <div class="stats-orb stats-orb-1" aria-hidden="true"></div>
+    <div class="stats-orb stats-orb-2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-card glass reveal-up" style="--d:0s">
+          <div class="stat-num gold" data-target="60" data-suffix="%">0</div>
+          <div class="stat-label">Fewer No-Shows</div>
+          <div class="stat-sub">Smart reminders recover lost revenue before it happens</div>
+        </div>
+        <div class="stat-card glass reveal-up" style="--d:.12s">
+          <div class="stat-num gold" data-target="3" data-suffix="x">0</div>
+          <div class="stat-label">More Reviews Collected</div>
+          <div class="stat-sub">Build social proof on autopilot, attract more customers</div>
+        </div>
+        <div class="stat-card glass reveal-up" style="--d:.24s">
+          <div class="stat-num gold" data-target="40" data-suffix="%">0</div>
+          <div class="stat-label">More Leads Converted</div>
+          <div class="stat-sub">60-second AI follow-up captures leads before they go cold</div>
+        </div>
+        <div class="stat-card glass reveal-up" style="--d:.36s">
+          <div class="stat-num gold" data-suffix="">24/7</div>
+          <div class="stat-label">Runs Without Staff</div>
+          <div class="stat-sub">Save thousands in admin hours every single month</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 6 — INDUSTRIES
+  ═══════════════════════════════════════════ -->
+  <section class="section ind-section" id="industries">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <span class="sec-tag">Industries</span>
+        <h2 class="sec-title">Built For <span class="gradient-text">Your Industry</span></h2>
+      </div>
+
+      <div class="ind-grid">
+        <div class="ind-card glass reveal-up" style="--d:0s">
+          <h3>Med Spas &amp; Aesthetics</h3>
+          <p>Fill every slot automatically</p>
+        </div>
+        <div class="ind-card glass reveal-up" style="--d:.1s">
+          <h3>Dental Offices</h3>
+          <p>Reactivate patients, eliminate no-shows</p>
+        </div>
+        <div class="ind-card glass reveal-up" style="--d:.2s">
+          <h3>HVAC &amp; Home Services</h3>
+          <p>Never miss a lead or follow-up</p>
+        </div>
+        <div class="ind-card glass reveal-up" style="--d:.3s">
+          <h3>Auto Repair &amp; Dealerships</h3>
+          <p>Automate reminders, reviews, reactivation</p>
+        </div>
+        <div class="ind-card glass reveal-up" style="--d:.4s">
+          <h3>Chiro &amp; Wellness</h3>
+          <p>Keep your schedule full on autopilot</p>
+        </div>
+        <div class="ind-card glass reveal-up" style="--d:.5s">
+          <h3>Physical Therapy</h3>
+          <p>Onboard new patients and reactivate old ones</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 7 — PRODUCTS TEASER
+  ═══════════════════════════════════════════ -->
+  <section class="section prod-section" id="products">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <span class="sec-tag">Our Work</span>
+        <h2 class="sec-title">Products We've <span class="gradient-text">Built &amp; Launched</span></h2>
+        <p class="sec-sub" style="max-width:600px;margin:0 auto;">A look at two of the AI platforms we've built from scratch — both live, profitable, and serving real businesses today.</p>
+      </div>
+
+      <div class="prod-grid">
+
+        <div class="prod-card glass reveal-up" style="--d:0s">
+          <div class="prod-glow prod-glow-blue" aria-hidden="true"></div>
+          <div class="prod-badge">Live Product</div>
+          <h3 class="prod-name">AvaHealth AI</h3>
+          <p class="prod-desc">An AI platform we built for healthcare and med spa businesses — fully live, actively generating revenue, and automating the complete patient lifecycle.</p>
+          <ul class="prod-feats">
+            <li>Instant lead response &amp; qualification</li>
+            <li>Appointment booking &amp; reminders</li>
+            <li>Review collection &amp; reactivation</li>
+          </ul>
+          <a href="https://avahealthai.com" target="_blank" rel="noopener" class="btn btn-outline prod-btn">
+            <span>Visit Live Product</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="prod-card glass reveal-up" style="--d:.18s">
+          <div class="prod-glow prod-glow-purple" aria-hidden="true"></div>
+          <div class="prod-badge prod-badge-purple">Live Product</div>
+          <h3 class="prod-name">Jwala AI</h3>
+          <p class="prod-desc">An AI automation platform we built for home service businesses — live and already turning leads into booked jobs and past clients into repeat revenue.</p>
+          <ul class="prod-feats">
+            <li>24/7 AI lead follow-up via SMS &amp; voice</li>
+            <li>Calendar-synced job booking &amp; reminders</li>
+            <li>Seasonal reactivation campaigns</li>
+          </ul>
+          <a href="https://jwalaai.com" target="_blank" rel="noopener" class="btn btn-outline prod-btn prod-btn-purple">
+            <span>Visit Live Product</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 8 — CTA BANNER
+  ═══════════════════════════════════════════ -->
+  <section class="cta-banner" id="ctaBanner">
+    <div class="cta-orb cta-orb-1" aria-hidden="true"></div>
+    <div class="cta-orb cta-orb-2" aria-hidden="true"></div>
+    <div class="cta-inner reveal-up">
+      <span class="sec-tag">Get Started</span>
+      <h2 class="cta-headline">Ready to Put Your Business<br/><span class="gradient-text">on Autopilot?</span></h2>
+      <p class="cta-sub">Book a free 30-minute strategy call. No commitment, no pressure.</p>
+      <a href="contact.html" class="btn btn-primary btn-large">
+        <span>Book My Free Call</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 9 — FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-gradient-border" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-mark">◈</span>
+            <span class="logo-word">Nova<em>Mind</em></span>
+          </a>
+          <p class="footer-tag">AI automation for local service businesses.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-btn" aria-label="X / Twitter">𝕏</a>
+            <a href="#" class="social-btn" aria-label="Instagram">◉</a>
+          </div>
+        </div>
+
+        <!-- Nav -->
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">Lead Follow-Up</a></li>
+              <li><a href="services.html">Booking Automation</a></li>
+              <li><a href="services.html">No-Show Recovery</a></li>
+              <li><a href="services.html">Review Collection</a></li>
+              <li><a href="services.html">Reactivation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Work</h4>
+            <ul>
+              <li><a href="https://avahealthai.com" target="_blank" rel="noopener">AvaHealth AI</a></li>
+              <li><a href="https://jwalaai.com"     target="_blank" rel="noopener">Jwala AI</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 NovaMind AI. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/global.js"></script>
+  <script src="scripts/home2.js"></script>
+</body>
+</html>

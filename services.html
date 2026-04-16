@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — NovaMind AI | Custom AI Automation Systems</title>
+  <meta name="description" content="Custom AI automation systems for local service businesses. Lead follow-up, appointment booking, no-show recovery, review collection, and patient reactivation — built for your specific business." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/services.css" />
+</head>
+<body>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="page-overlay" id="pageOverlay"></div>
+
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">◈</span>
+        <span class="logo-word">Nova<em>Mind</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"    class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link active">Services</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="about.html"    class="nav-link">About</a></li>
+        <li><a href="contact.html"  class="nav-link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Book a Call</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       §1 — HERO
+  ════════════════════════════════════════════════════════════ -->
+  <section class="page-hero" id="hero">
+    <div class="hero-orb hero-orb-blue"   aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-purple" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <span class="hero-label">WHAT WE BUILD</span>
+
+      <h1 class="hero-headline" aria-label="AI Systems That Run Your Business While You Sleep">
+        <span class="hw" style="--i:0">AI</span>
+        <span class="hw" style="--i:1">Systems</span>
+        <span class="hw" style="--i:2">That</span>
+        <span class="hw" style="--i:3">Run</span>
+        <span class="hw" style="--i:4">Your</span>
+        <br class="hw-br"/>
+        <span class="hw" style="--i:5">Business</span>
+        <span class="hw grad-word" style="--i:6">While</span>
+        <span class="hw grad-word" style="--i:7">You</span>
+        <span class="hw grad-word" style="--i:8">Sleep</span>
+      </h1>
+
+      <p class="hero-sub">
+        Stop losing revenue to slow follow-ups, no-shows, and forgotten customers. We automate your entire customer journey — so your business grows while you sleep.
+      </p>
+    </div>
+
+    <div class="scroll-arrow" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       §IMPACT — RESULTS STRIP
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="impact-strip" id="impactStrip">
+    <div class="container">
+      <div class="impact-grid">
+
+        <div class="impact-item reveal-up" style="--d:0s">
+          <div class="impact-stat">60%</div>
+          <div class="impact-label">Fewer No-Shows</div>
+          <div class="impact-desc">Smart reminder sequences recover booked revenue before it walks out the door</div>
+        </div>
+
+        <div class="impact-item reveal-up" style="--d:.1s">
+          <div class="impact-stat">3x</div>
+          <div class="impact-label">More Reviews</div>
+          <div class="impact-desc">AI asks every happy customer at the perfect moment — your Google rating climbs automatically</div>
+        </div>
+
+        <div class="impact-item reveal-up" style="--d:.2s">
+          <div class="impact-stat">40%</div>
+          <div class="impact-label">More Leads Converted</div>
+          <div class="impact-desc">60-second AI response captures leads before competitors even pick up the phone</div>
+        </div>
+
+        <div class="impact-item reveal-up" style="--d:.3s">
+          <div class="impact-stat">20hrs</div>
+          <div class="impact-label">Staff Time Saved / Week</div>
+          <div class="impact-desc">No more manual follow-ups, reminder calls, or chasing reviews — AI handles it all</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       §2 — PACKAGES
+  ════════════════════════════════════════════════════════════ -->
+  <section class="section packages-section" id="packages">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <span class="sec-tag">Investment</span>
+        <h2 class="sec-title">Choose Your <span class="gradient-text">Starting Point</span></h2>
+        <p class="sec-sub">Every package is a done-for-you build. Pricing is tailored to your business — book a free call to get your custom quote.</p>
+      </div>
+
+      <div class="packages-grid">
+
+        <!-- ── Starter ── -->
+        <div class="pkg-card glass reveal-up" style="--d:.05s">
+          <div class="pkg-tier">Starter System</div>
+
+          <div class="pkg-price-cta">
+            <span class="pkg-price-label">Contact for pricing</span>
+          </div>
+
+          <div class="pkg-best">
+            <span class="pkg-best-label">Best for:</span>
+            Businesses starting out — stop losing leads and no-shows immediately
+          </div>
+          <div class="pkg-divider"></div>
+
+          <ul class="pkg-features">
+            <li>
+              <span class="feat-dot feat-blue"></span>
+              <div>
+                <strong>2–3 Core Automations</strong>
+                <p>Missed call text-back, appointment reminders, and review collection</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-blue"></span>
+              <div>
+                <strong>Custom AI Build</strong>
+                <p>Trained on your business, brand voice, and service menu</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-blue"></span>
+              <div>
+                <strong>Full Integration</strong>
+                <p>Connected to your calendar, CRM, and phone system</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-blue"></span>
+              <div>
+                <strong>30 Days Free Support</strong>
+                <p>After-launch support to ensure everything runs perfectly</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="pkg-turnaround">
+            <span class="turn-icon">&#x25B6;</span>
+            <span>Turnaround: <strong>5–7 days</strong></span>
+          </div>
+          <a href="contact.html" class="btn btn-outline pkg-btn">
+            <span>Get Started</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- ── Growth (MOST POPULAR) ── -->
+        <div class="pkg-card pkg-featured glass reveal-up" style="--d:.18s">
+          <div class="popular-badge">
+            <span class="popular-dot"></span>
+            MOST POPULAR
+          </div>
+
+          <div class="pkg-tier pkg-tier-gold">Growth System</div>
+
+          <div class="pkg-price-cta">
+            <span class="pkg-price-label pkg-price-label-gold">Contact for pricing</span>
+          </div>
+
+          <div class="pkg-best">
+            <span class="pkg-best-label">Best for:</span>
+            Growing businesses ready to scale customers and revenue on autopilot
+          </div>
+          <div class="pkg-divider pkg-divider-gold"></div>
+
+          <ul class="pkg-features">
+            <li>
+              <span class="feat-dot feat-gold"></span>
+              <div>
+                <strong>5–6 Automations</strong>
+                <p>Lead follow-up, no-show recovery, reactivation, onboarding &amp; review automation</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-gold"></span>
+              <div>
+                <strong>Full Journey Coverage</strong>
+                <p>From first inquiry all the way through to review collection</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-gold"></span>
+              <div>
+                <strong>Multi-Channel AI</strong>
+                <p>SMS, email, and AI voice working together seamlessly</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-gold"></span>
+              <div>
+                <strong>Performance Dashboard</strong>
+                <p>Live reporting so you see exactly what the AI is doing</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-gold"></span>
+              <div>
+                <strong>30 Days Free Support</strong>
+                <p>Dedicated success manager during and after launch</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="pkg-turnaround">
+            <span class="turn-icon">&#x25B6;</span>
+            <span>Turnaround: <strong>10–14 days</strong></span>
+          </div>
+          <a href="contact.html" class="btn btn-primary pkg-btn">
+            <span>Get Started</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- ── Full AI ── -->
+        <div class="pkg-card glass reveal-up" style="--d:.32s">
+          <div class="pkg-tier">Full AI System</div>
+
+          <div class="pkg-price-cta">
+            <span class="pkg-price-label">Contact for pricing</span>
+          </div>
+
+          <div class="pkg-best">
+            <span class="pkg-best-label">Best for:</span>
+            Established businesses that want maximum growth, minimum overhead
+          </div>
+          <div class="pkg-divider"></div>
+
+          <ul class="pkg-features">
+            <li>
+              <span class="feat-dot feat-purple"></span>
+              <div>
+                <strong>Everything Included</strong>
+                <p>Complete customer journey from first inquiry to long-term reactivation</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-purple"></span>
+              <div>
+                <strong>Advanced AI Brain</strong>
+                <p>Deeply trained on your business, handles edge cases &amp; complex conversations</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-purple"></span>
+              <div>
+                <strong>Unlimited Automations</strong>
+                <p>Every touchpoint in your customer lifecycle — fully automated</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-purple"></span>
+              <div>
+                <strong>Priority Build &amp; Support</strong>
+                <p>Dedicated team, priority delivery, and white-glove onboarding</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-dot feat-purple"></span>
+              <div>
+                <strong>30 Days Free Support</strong>
+                <p>Plus monthly strategy review and optimization recommendations</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="pkg-turnaround">
+            <span class="turn-icon">&#x25B6;</span>
+            <span>Turnaround: <strong>14–21 days</strong></span>
+          </div>
+          <a href="contact.html" class="btn btn-outline-purple pkg-btn">
+            <span>Get Started</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div><!-- /packages-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       §3 — SERVICE LIST BY INDUSTRY
+  ════════════════════════════════════════════════════════════ -->
+  <section class="section industry-section" id="byIndustry">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <span class="sec-tag">Industry-Specific</span>
+        <h2 class="sec-title">Services Built For <span class="gradient-text">Your Business</span></h2>
+        <p class="sec-sub">Every automation below is designed to save you time, reduce costs, and bring in more customers — without adding staff. Click your industry to see exactly what we'd build for you.</p>
+      </div>
+
+      <!-- Tab Bar — scrollable on mobile -->
+      <div class="tab-bar-wrap reveal-up">
+        <div class="tab-bar" id="tabBar" role="tablist" aria-label="Industry tabs">
+          <button class="tab-btn active" data-tab="facebook"  role="tab" aria-selected="true"  aria-controls="panel-facebook">Facebook Business</button>
+          <button class="tab-btn"        data-tab="clothing"  role="tab" aria-selected="false" aria-controls="panel-clothing">Online Clothing</button>
+          <button class="tab-btn"        data-tab="medspa"    role="tab" aria-selected="false" aria-controls="panel-medspa">Med Spas</button>
+          <button class="tab-btn"        data-tab="dental"    role="tab" aria-selected="false" aria-controls="panel-dental">Dental</button>
+          <button class="tab-btn"        data-tab="hvac"      role="tab" aria-selected="false" aria-controls="panel-hvac">HVAC</button>
+          <button class="tab-btn"        data-tab="auto"      role="tab" aria-selected="false" aria-controls="panel-auto">Auto</button>
+          <button class="tab-btn"        data-tab="chiro"     role="tab" aria-selected="false" aria-controls="panel-chiro">Chiro</button>
+        </div>
+      </div>
+
+      <div class="tab-panels" id="tabPanels">
+
+        <!-- ── Facebook Online Business / Page ── -->
+        <div class="tab-panel active" id="panel-facebook" role="tabpanel">
+          <div class="ind-panel-header">
+            <div>
+              <h3 class="ind-panel-title">Facebook Online Business &amp; Pages</h3>
+              <p class="ind-panel-sub">Turn your Facebook presence into a 24/7 lead generation machine — every comment, DM, and inquiry handled automatically.</p>
+            </div>
+          </div>
+          <div class="svc-grid">
+            <div class="svc-card glass">
+              <h3>Facebook DM Auto-Responder</h3>
+              <p>AI instantly replies to every Facebook message, qualifies leads, and guides them to purchase or booking.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Comment-to-DM Automation</h3>
+              <p>When someone comments on your post, AI sends them a private message — capturing leads before they scroll away.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Sales Funnel via Messenger</h3>
+              <p>AI-driven sales conversation in Messenger — from cold comment to warm buyer without human involvement.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Lead Re-Engagement</h3>
+              <p>AI follows up with cold leads who engaged but never purchased — at the right time, with the right message.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Review &amp; Testimonial Collection</h3>
+              <p>After every purchase, AI reaches out to happy customers and collects Facebook reviews automatically.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Ad Lead Follow-Up AI</h3>
+              <p>Every Facebook Ads lead gets an instant AI follow-up via Messenger and SMS — no paid lead goes cold.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Online Clothing Store ── -->
+        <div class="tab-panel" id="panel-clothing" role="tabpanel">
+          <div class="ind-panel-header">
+            <div>
+              <h3 class="ind-panel-title">Online Clothing Stores</h3>
+              <p class="ind-panel-sub">Recover abandoned carts, upsell customers, collect reviews, and keep buyers coming back — all on autopilot.</p>
+            </div>
+          </div>
+          <div class="svc-grid">
+            <div class="svc-card glass">
+              <h3>Abandoned Cart Recovery AI</h3>
+              <p>Multi-touch SMS and email sequences that recover shoppers who left without buying — triggered within minutes.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Post-Purchase Follow-Up</h3>
+              <p>AI reaches out after every order to confirm satisfaction, collect a review, and offer a timed upsell.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Review Collection Engine</h3>
+              <p>Personalised review requests at the right moment to maximise response rates on Google, Trustpilot, and your site.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Win-Back Campaigns</h3>
+              <p>AI identifies lapsed customers and sends personalised re-engagement offers automatically.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>DM &amp; Inquiry Response Bot</h3>
+              <p>AI handles all Instagram and Facebook DM inquiries — sizing, stock, shipping — so you never miss a sale.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>VIP &amp; Loyalty Automation</h3>
+              <p>Automated loyalty journeys that trigger exclusive offers and personalised outreach for your best customers.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Med Spas ── -->
+        <div class="tab-panel" id="panel-medspa" role="tabpanel">
+          <div class="ind-panel-header">
+            <div>
+              <h3 class="ind-panel-title">Med Spas &amp; Aesthetics</h3>
+              <p class="ind-panel-sub">Fill every slot, eliminate no-shows, and turn happy clients into a flood of 5-star reviews — on autopilot.</p>
+            </div>
+          </div>
+          <div class="svc-grid">
+            <div class="svc-card glass">
+              <h3>Missed Call Text-Back</h3>
+              <p>Every missed call triggers an instant AI SMS so no lead goes cold.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Appointment Booking AI</h3>
+              <p>Conversational AI books appointments directly into your calendar 24/7.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>No-Show Prevention</h3>
+              <p>Multi-touch reminder sequences that cut no-shows by up to 60%.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Review Collection Engine</h3>
+              <p>AI catches happy clients right after their appointment and drives them to Google Reviews.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Client Reactivation</h3>
+              <p>Automated campaigns re-engage clients who haven't booked in 60, 90, or 120 days.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Lead Follow-Up AI</h3>
+              <p>Every inquiry from Instagram, Google, or your website gets a response within 60 seconds.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Dental ── -->
+        <div class="tab-panel" id="panel-dental" role="tabpanel">
+          <div class="ind-panel-header">
+            <div>
+              <h3 class="ind-panel-title">Dental Offices</h3>
+              <p class="ind-panel-sub">Reactivate lapsed patients, fill your hygiene recall list, and eliminate no-shows with AI running around the clock.</p>
+            </div>
+          </div>
+          <div class="svc-grid">
+            <div class="svc-card glass">
+              <h3>New Patient Follow-Up</h3>
+              <p>AI calls and texts every new patient inquiry within 60 seconds and books them on the spot.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              
+              <h3>Hygiene Recall AI</h3>
+              <p>Automated recall sequences that contact every overdue patient via SMS, email, and voice.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              
+              <h3>Appointment Reminders</h3>
+              <p>Intelligent multi-touch reminders that virtually eliminate no-shows before they happen.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              
+              <h3>Review Collection</h3>
+              <p>Post-visit review requests sent at the perfect moment — while the experience is still fresh.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              
+              <h3>Patient Reactivation</h3>
+              <p>Bring back lapsed patients with personalised AI campaigns referencing their last visit.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              
+              <h3>Onboarding Automation</h3>
+              <p>New patient intake, forms, and pre-visit instructions — fully automated from first booking.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── HVAC ── -->
+        <div class="tab-panel" id="panel-hvac" role="tabpanel">
+          <div class="ind-panel-header">
+            <div>
+              <h3 class="ind-panel-title">HVAC &amp; Home Services</h3>
+              <p class="ind-panel-sub">Never miss a lead, fill your seasonal calendar ahead of time, and turn every completed job into a 5-star review.</p>
+            </div>
+          </div>
+          <div class="svc-grid">
+            <div class="svc-card glass">
+              <h3>Emergency Lead Capture</h3>
+              <p>24/7 AI instantly responds to every inbound call and web inquiry — especially nights and weekends.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Estimate Follow-Up AI</h3>
+              <p>Automated follow-up sequences that chase every open estimate until it converts or closes.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Seasonal Campaign AI</h3>
+              <p>Pre-season tune-up campaigns that fill your calendar months ahead of time.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Service Reminder System</h3>
+              <p>Annual maintenance reminders that re-engage every past customer at the right time.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Review Collection</h3>
+              <p>Post-job review automation catches happy customers while the experience is still top of mind.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Reactivation Campaigns</h3>
+              <p>Win back customers who haven't called in 12–24 months with personalised outreach.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Auto ── -->
+        <div class="tab-panel" id="panel-auto" role="tabpanel">
+          <div class="ind-panel-header">
+            <div>
+              <h3 class="ind-panel-title">Auto Repair &amp; Dealerships</h3>
+              <p class="ind-panel-sub">Keep your bays full with automated reminders, review collection, and AI that brings customers back on schedule.</p>
+            </div>
+          </div>
+          <div class="svc-grid">
+            <div class="svc-card glass">
+              <h3>Service Reminder AI</h3>
+              <p>Automated oil change and maintenance reminders keep customers coming back on schedule.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Missed Call Text-Back</h3>
+              <p>Never lose a customer who calls after hours — AI responds instantly with a booking link.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Review Collection</h3>
+              <p>After every completed job, AI captures the review before the customer drives away.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Customer Reactivation</h3>
+              <p>Personalised campaigns bringing back customers who haven't visited in 90, 180, or 365 days.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Appointment Scheduling AI</h3>
+              <p>Customers book their own drop-off appointments via SMS — zero phone calls needed.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Estimate Follow-Up</h3>
+              <p>Automated follow-up on every quote to maximise your close rate without chasing manually.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Chiro ── -->
+        <div class="tab-panel" id="panel-chiro" role="tabpanel">
+          <div class="ind-panel-header">
+            <div>
+              <h3 class="ind-panel-title">Chiro &amp; Wellness Clinics</h3>
+              <p class="ind-panel-sub">Keep your schedule full, reduce dropout from care plans, and bring back lapsed patients — entirely on autopilot.</p>
+            </div>
+          </div>
+          <div class="svc-grid">
+            <div class="svc-card glass">
+              <h3>New Patient AI Intake</h3>
+              <p>Instant response to every inquiry that books, qualifies, and onboards new patients automatically.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Care Plan Automation</h3>
+              <p>AI keeps patients on their care plan schedule — reducing dropout and maximising outcomes.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Appointment Reminders</h3>
+              <p>Multi-touch reminder sequences that dramatically reduce cancellations and no-shows.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Inactive Patient Revival</h3>
+              <p>Intelligent campaigns re-engage patients who dropped off their care plan.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Review Collection Engine</h3>
+              <p>Post-visit review requests turn satisfied patients into powerful social proof automatically.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+            <div class="svc-card glass">
+              <h3>Referral Request AI</h3>
+              <p>AI reaches out to your best patients at the perfect moment and asks for a referral naturally.</p>
+              <div class="svc-price">Contact for pricing</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tab-panels -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       §4 — MONTHLY RETAINER
+  ════════════════════════════════════════════════════════════ -->
+  <section class="section retainer-section" id="retainer">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <span class="sec-tag">Ongoing Support</span>
+        <h2 class="sec-title">Monthly <span class="gradient-text">Retainer Plans</span></h2>
+        <p class="sec-sub">Keep your AI system sharp, updated, and continuously improving with a monthly partner plan.</p>
+      </div>
+
+      <div class="retainer-grid">
+
+        <!-- Maintenance -->
+        <div class="ret-card glass reveal-up" style="--d:.08s">
+          <div class="ret-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="ret-name">Maintenance Plan</div>
+          <div class="ret-price-cta">
+            <span class="ret-price-label">Contact for pricing</span>
+            <span class="ret-per">/month</span>
+          </div>
+          <div class="ret-divider"></div>
+          <ul class="ret-features">
+            <li><span class="feat-dot feat-blue"></span>System monitoring &amp; uptime checks</li>
+            <li><span class="feat-dot feat-blue"></span>Software updates and integration maintenance</li>
+            <li><span class="feat-dot feat-blue"></span>Minor message sequence tweaks and adjustments</li>
+            <li><span class="feat-dot feat-blue"></span>Monthly performance summary report</li>
+            <li><span class="feat-dot feat-blue"></span>Priority email support (response within 24hrs)</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline ret-btn">
+            <span>Add to My System</span>
+          </a>
+        </div>
+
+        <!-- Growth -->
+        <div class="ret-card ret-card-featured glass reveal-up" style="--d:.22s">
+          <div class="ret-badge-wrap">
+            <span class="ret-badge">BEST VALUE</span>
+          </div>
+          <div class="ret-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <div class="ret-name ret-name-gold">Growth Plan</div>
+          <div class="ret-price-cta">
+            <span class="ret-price-label ret-price-label-gold">Contact for pricing</span>
+            <span class="ret-per">/month</span>
+          </div>
+          <div class="ret-divider ret-divider-gold"></div>
+          <ul class="ret-features">
+            <li><span class="feat-dot feat-gold"></span>Everything in Maintenance +</li>
+            <li><span class="feat-dot feat-gold"></span>1 new automation added or optimised each month</li>
+            <li><span class="feat-dot feat-gold"></span>Full performance reporting with conversion metrics</li>
+            <li><span class="feat-dot feat-gold"></span>Monthly strategy call with your success manager</li>
+            <li><span class="feat-dot feat-gold"></span>A/B testing on message sequences</li>
+            <li><span class="feat-dot feat-gold"></span>Priority build queue for any new additions</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary ret-btn">
+            <span>Add to My System</span>
+          </a>
+        </div>
+
+      </div><!-- /retainer-grid -->
+
+      <div class="support-note reveal-up">
+        <span class="support-glow-dot"></span>
+        All systems come with <strong>30 days of free support</strong> after delivery — no retainer required.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       §5 — CTA BANNER
+  ════════════════════════════════════════════════════════════ -->
+  <section class="cta-banner" id="ctaBanner">
+    <div class="cta-orb cta-orb-1" aria-hidden="true"></div>
+    <div class="cta-orb cta-orb-2" aria-hidden="true"></div>
+    <div class="cta-inner reveal-up">
+      <span class="sec-tag">Get Started</span>
+      <h2 class="cta-headline">Ready to Put Your Business<br/><span class="gradient-text">on Autopilot?</span></h2>
+      <p class="cta-sub">Book a free 30-minute strategy call. We'll walk through your business and show you exactly what your AI system will look like — no commitment required.</p>
+      <a href="contact.html" class="btn btn-primary btn-large">
+        <span>Book My Free Call</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-gradient-border" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-mark">◈</span>
+            <span class="logo-word">Nova<em>Mind</em></span>
+          </a>
+          <p class="footer-tag">AI automation for local service businesses.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-btn" aria-label="X / Twitter">𝕏</a>
+            <a href="#" class="social-btn" aria-label="Instagram">◉</a>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">Lead Follow-Up</a></li>
+              <li><a href="services.html">Booking Automation</a></li>
+              <li><a href="services.html">No-Show Recovery</a></li>
+              <li><a href="services.html">Review Collection</a></li>
+              <li><a href="services.html">Reactivation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Work</h4>
+            <ul>
+              <li><a href="https://avahealthai.com" target="_blank" rel="noopener">AvaHealth AI</a></li>
+              <li><a href="https://jwalaai.com"     target="_blank" rel="noopener">Jwala AI</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 NovaMind AI. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/global.js"></script>
+  <script src="scripts/services.js"></script>
+</body>
+</html>
