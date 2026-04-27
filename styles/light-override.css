@@ -1,0 +1,237 @@
+/* ============================================================
+   LIGHT THEME OVERRIDE — Loaded last, highest specificity
+   Forces the entire site to a clean white background
+   ============================================================ */
+
+/* ── FORCE WHITE BACKGROUND EVERYWHERE ─────────────────────── */
+html, body {
+  background: #FFFFFF !important;
+  color: #1A1A2E !important;
+}
+
+/* Kill both pseudo-element backgrounds (body::before used for
+   the animated gradient in all page CSS files) */
+body::before, body::after {
+  background: #FFFFFF !important;
+  animation: none !important;
+}
+
+/* ── HERO SECTION: remove dark orbs ──────────────────────────── */
+.orb-blue, .orb-purple,
+.orb-1, .orb-2, .orb-3, .orb-4, .orb-5,
+.bg-orb, .bg-orb-1, .bg-orb-2, .bg-orb-3, .bg-orb-4,
+.stats-orb, .stats-orb-1, .stats-orb-2,
+.cta-orb, .cta-orb-1, .cta-orb-2,
+.prod-orb, .hero-orb,
+.orb { opacity: 0 !important; }
+
+/* ── HERO SECTION: white bg ───────────────────────────────────── */
+.hero {
+  background: #FFFFFF !important;
+}
+#heroCanvas {
+  opacity: 0.12 !important; /* keep subtle constellation but very faint */
+}
+
+/* ── ALL SECTION BACKGROUNDS ──────────────────────────────────── */
+.section,
+.ps-section,
+.hiw-section,
+.stats-section,
+.ind-section,
+.prod-section,
+.packages-section,
+.retainer-section,
+.impact-strip,
+.about-cta,
+.contact-page,
+.mission-section,
+.diff-section {
+  background: #FFFFFF !important;
+}
+
+/* Alternate section tint (very subtle) */
+.hiw-section,
+.stats-section,
+.prod-section,
+.packages-section,
+.retainer-section {
+  background: #F8F9FF !important;
+}
+
+/* ── CTA BANNER ───────────────────────────────────────────────── */
+.cta-banner {
+  background: linear-gradient(135deg, #EEF4FF 0%, #F0EDFF 60%, #EEF4FF 100%) !important;
+  animation: none !important;
+}
+
+/* ── TICKER / MARQUEE ─────────────────────────────────────────── */
+.ticker-band, .ticker-wrapper {
+  background: #F0F2FF !important;
+  border-top: 1px solid rgba(45,126,255,.15) !important;
+  border-bottom: 1px solid rgba(45,126,255,.15) !important;
+}
+.ticker-fade-l {
+  background: linear-gradient(90deg, #F0F2FF, transparent) !important;
+}
+.ticker-fade-r {
+  background: linear-gradient(-90deg, #F0F2FF, transparent) !important;
+}
+
+/* ── GLASS CARDS ──────────────────────────────────────────────── */
+.glass, .glass-card,
+.glass-card, .stat-card,
+.hiw-card, .ind-card, .prod-card,
+.diff-card, .form-card,
+.info-block, .contact-card, .impact-card,
+.retainer-card, .package-card, .faq-item {
+  background: rgba(255,255,255,0.9) !important;
+  border-color: rgba(45,126,255,.18) !important;
+  box-shadow: 0 4px 24px rgba(45,126,255,.08), 0 1px 4px rgba(0,0,0,.05) !important;
+}
+
+/* ── PRELOADER ────────────────────────────────────────────────── */
+#preloader {
+  background: #F0F2FF !important;
+}
+
+/* ── PAGE TRANSITIONS ─────────────────────────────────────────── */
+.page-overlay, .page-transition {
+  background: #FFFFFF !important;
+}
+
+/* ── NAVBAR ───────────────────────────────────────────────────── */
+.navbar.scrolled {
+  background: rgba(255,255,255,.97) !important;
+  border-bottom: 1px solid rgba(45,126,255,.15) !important;
+  box-shadow: 0 2px 20px rgba(45,126,255,.08) !important;
+}
+
+/* ── TEXT COLOURS ──────────────────────────────────────────────── */
+.logo-text, .logo-word, .nav-logo {
+  color: #1A1A2E !important;
+}
+.nav-link { color: #5A6080 !important; }
+.nav-link:hover, .nav-link.active { color: #1A1A2E !important; }
+
+.hero-headline, .story-headline, .page-hero-title,
+h1, h2, h3, h4, h5, h6,
+.sec-title, .section-title, .cta-headline, .prod-name,
+.ps-heading {
+  color: #1A1A2E !important;
+}
+
+p, li,
+.hero-sub, .hero-trust,
+.sec-sub, .section-subtitle,
+.hero-trust, .cta-sub,
+.footer-tagline, .footer-tag,
+.ticker-item, .ind-card p, .hiw-card p,
+.prod-desc, .dc-desc, .diff-card p,
+.contact-sub, .story-para,
+.footer-links-col a, .footer-col a,
+.form-subtitle, .form-group label,
+.footer-bottom, .footer-legal a {
+  color: #5A6080 !important;
+}
+
+/* Keep gradient text working */
+.gradient-text {
+  color: transparent !important;
+  background: linear-gradient(135deg, #2D7EFF, #7B4FFF) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* ── FOOTER ───────────────────────────────────────────────────── */
+.footer, .site-footer {
+  background: #F0F2FF !important;
+  border-top: 1px solid rgba(45,126,255,.15) !important;
+}
+.footer-links-col h4, .footer-col h4 {
+  color: #1A1A2E !important;
+}
+.footer-bottom { color: rgba(90,96,128,.7) !important; }
+
+/* ── HAMBURGER ────────────────────────────────────────────────── */
+.hamburger span, .nav-hamburger span {
+  background: #1A1A2E !important;
+}
+
+/* ── FORM FIELDS ──────────────────────────────────────────────── */
+.form-control, .form-field input,
+.form-field textarea, .form-field select {
+  background: #F8F9FF !important;
+  border-color: rgba(45,126,255,.25) !important;
+  color: #1A1A2E !important;
+}
+.form-control::placeholder,
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(90,96,128,.5) !important;
+}
+.form-title { color: #1A1A2E !important; }
+
+/* ── MOBILE NAV ───────────────────────────────────────────────── */
+.nav-links.open {
+  background: rgba(255,255,255,.99) !important;
+  border-bottom: 1px solid rgba(45,126,255,.15) !important;
+  box-shadow: 0 8px 32px rgba(45,126,255,.1) !important;
+}
+
+/* ── SCROLLBAR ────────────────────────────────────────────────── */
+::-webkit-scrollbar-track { background: #F0F2FF !important; }
+::selection { background: rgba(45,126,255,.2) !important; color: #1A1A2E !important; }
+
+/* ── PRODUCT SECTIONS ─────────────────────────────────────────── */
+.prod-section-1, .prod-section-2 {
+  background: #F8F9FF !important;
+}
+.mockup-card {
+  background: rgba(255,255,255,.98) !important;
+  border-color: rgba(45,126,255,.15) !important;
+  box-shadow: 0 20px 60px rgba(45,126,255,.1) !important;
+}
+.mock-topbar {
+  background: #F0F2FF !important;
+  border-bottom-color: rgba(45,126,255,.15) !important;
+}
+.mock-metric-card {
+  background: #F8F9FF !important;
+  border-color: rgba(45,126,255,.15) !important;
+}
+
+/* ── MISSION / ABOUT SECTION ─────────────────────────────────── */
+.mission-section, .mission-bg {
+  background: #F0F2FF !important;
+  animation: none !important;
+}
+
+/* ── LEFT ORB (contact page ambient) ─────────────────────────── */
+.left-orb { opacity: 0 !important; }
+
+/* ── CONSTELLATION CANVAS (contact/products) ──────────────────── */
+#constellationCanvas {
+  opacity: 0.08 !important;
+}
+
+/* ── DIVIDER COLOURS ──────────────────────────────────────────── */
+.ps-divider .divider-line,
+.contact-divider-line {
+  background: linear-gradient(180deg,
+    transparent,
+    rgba(45,126,255,.4) 20%,
+    rgba(123,79,255,.6) 50%,
+    rgba(45,126,255,.4) 80%,
+    transparent) !important;
+}
+
+/* ── STAT LABELS & VALUES ─────────────────────────────────────── */
+.stat-label, .stat-sub { color: #5A6080 !important; }
+.info-label { color: #7B4FFF !important; }
+.info-value, .card-value { color: #1A1A2E !important; }
+.card-label, .card-desc { color: #5A6080 !important; }
+
+/* ── PS LIST ITEMS ────────────────────────────────────────────── */
+.ps-list li { color: #5A6080 !important; }

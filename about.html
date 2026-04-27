@@ -7,6 +7,7 @@
   <meta name="description" content="Learn the story behind NovaMind AI — why we exist, what drives us, and why we're obsessed with helping local service businesses compete using the power of AI." />
   <link rel="stylesheet" href="styles/global.css" />
   <link rel="stylesheet" href="styles/about.css" />
+  <link rel="stylesheet" href="styles/light-override.css" />
 </head>
 <body>
 
@@ -49,40 +50,62 @@
     <div class="story-orb story-orb-2"></div>
     <div class="story-orb story-orb-3"></div>
 
-    <div class="story-inner">
-      <!-- Eyebrow label -->
-      <span class="story-tag">Our Story</span>
+    <div class="story-inner story-inner-split">
 
-      <!-- Word-by-word headline (injected by JS) -->
-      <h1 class="story-headline" id="storyHeadline" aria-label="We Built This Because Businesses Deserve Better"></h1>
+      <!-- LEFT: Text + Stats -->
+      <div class="story-text-col">
+        <!-- Eyebrow label -->
+        <span class="story-tag">Our Story</span>
 
-      <!-- Fade-in paragraph -->
-      <p class="story-para" id="storyPara">
-        Great local businesses were losing money — not from bad service, but from
-        <strong>no follow-up system</strong> and no way to bring customers back.
-        <br /><br />
-        So we built one. <strong>Using AI.</strong>
-      </p>
+        <!-- Word-by-word headline (injected by JS) -->
+        <h1 class="story-headline" id="storyHeadline" aria-label="We Built This Because Businesses Deserve Better"></h1>
 
-      <!-- Stats strip -->
-      <div class="story-stats">
-        <div class="story-stat">
-          <div class="stat-num" id="statA">200+</div>
-          <div class="stat-label">Businesses Automated</div>
-        </div>
-        <div class="story-stat">
-          <div class="stat-num" id="statB">$4M+</div>
-          <div class="stat-label">Revenue Generated</div>
-        </div>
-        <div class="story-stat">
-          <div class="stat-num" id="statC">98%</div>
-          <div class="stat-label">Client Retention Rate</div>
-        </div>
-        <div class="story-stat">
-          <div class="stat-num" id="statD">14</div>
-          <div class="stat-label">Days Avg. to Go Live</div>
+        <!-- Fade-in paragraph -->
+        <p class="story-para" id="storyPara">
+          Great local businesses were losing money — not from bad service, but from
+          <strong>no follow-up system</strong> and no way to bring customers back.
+          <br /><br />
+          So we built one. <strong>Using AI.</strong>
+        </p>
+
+        <!-- Stats strip -->
+        <div class="story-stats">
+          <div class="story-stat">
+            <div class="stat-num" id="statA">200+</div>
+            <div class="stat-label">Businesses Automated</div>
+          </div>
+          <div class="story-stat">
+            <div class="stat-num" id="statB">$4M+</div>
+            <div class="stat-label">Revenue Generated</div>
+          </div>
+          <div class="story-stat">
+            <div class="stat-num" id="statC">98%</div>
+            <div class="stat-label">Client Retention Rate</div>
+          </div>
+          <div class="story-stat">
+            <div class="stat-num" id="statD">14</div>
+            <div class="stat-label">Days Avg. to Go Live</div>
+          </div>
         </div>
       </div>
+
+      <!-- RIGHT: Team photo -->
+      <div class="story-image-col">
+        <div class="story-img-wrap">
+          <div class="story-img-glow"></div>
+          <img
+            src="images/about_team.jpg"
+            alt="NovaMind AI team collaborating in a modern office"
+            class="story-img"
+            loading="eager"
+          />
+          <div class="story-img-badge">
+            <span class="story-badge-icon">◈</span>
+            <span class="story-badge-text">NovaMind AI Team</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 

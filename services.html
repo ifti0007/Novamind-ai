@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/global.css" />
   <link rel="stylesheet" href="styles/services.css" />
+  <link rel="stylesheet" href="styles/light-override.css" />
 </head>
 <body>
 
@@ -50,31 +51,47 @@
     <div class="hero-orb hero-orb-blue"   aria-hidden="true"></div>
     <div class="hero-orb hero-orb-purple" aria-hidden="true"></div>
 
-    <div class="hero-content">
-      <span class="hero-label">WHAT WE BUILD</span>
+    <div class="hero-split-svc">
+      <div class="hero-content">
+        <span class="hero-label">WHAT WE BUILD</span>
 
-      <h1 class="hero-headline" aria-label="AI Systems That Run Your Business While You Sleep">
-        <span class="hw" style="--i:0">AI</span>
-        <span class="hw" style="--i:1">Systems</span>
-        <span class="hw" style="--i:2">That</span>
-        <span class="hw" style="--i:3">Run</span>
-        <span class="hw" style="--i:4">Your</span>
-        <br class="hw-br"/>
-        <span class="hw" style="--i:5">Business</span>
-        <span class="hw grad-word" style="--i:6">While</span>
-        <span class="hw grad-word" style="--i:7">You</span>
-        <span class="hw grad-word" style="--i:8">Sleep</span>
-      </h1>
+        <h1 class="hero-headline" aria-label="AI Systems That Run Your Business While You Sleep">
+          <span class="hw" style="--i:0">AI</span>
+          <span class="hw" style="--i:1">Systems</span>
+          <span class="hw" style="--i:2">That</span>
+          <span class="hw" style="--i:3">Run</span>
+          <span class="hw" style="--i:4">Your</span>
+          <br class="hw-br"/>
+          <span class="hw" style="--i:5">Business</span>
+          <span class="hw grad-word" style="--i:6">While</span>
+          <span class="hw grad-word" style="--i:7">You</span>
+          <span class="hw grad-word" style="--i:8">Sleep</span>
+        </h1>
 
-      <p class="hero-sub">
-        Stop losing revenue to slow follow-ups, no-shows, and forgotten customers. We automate your entire customer journey — so your business grows while you sleep.
-      </p>
+        <p class="hero-sub">
+          Stop losing revenue to slow follow-ups, no-shows, and forgotten customers. We automate your entire customer journey — so your business grows while you sleep.
+        </p>
+      </div>
+
+      <!-- Services page hero image -->
+      <div class="hero-img-col">
+        <div class="svc-hero-img-wrap">
+          <div class="svc-hero-img-glow"></div>
+          <img
+            src="images/services_bg.jpg"
+            alt="AI automation team working on customer journey systems"
+            class="svc-hero-img"
+            loading="eager"
+          />
+        </div>
+      </div>
     </div>
 
     <div class="scroll-arrow" aria-hidden="true">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     </div>
   </section>
+
 
   <!-- ═══════════════════════════════════════════════════════════
        §IMPACT — RESULTS STRIP
